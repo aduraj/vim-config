@@ -18,7 +18,3 @@
 	path = bundle/snipmate
 	url = https://github.com/msanders/snipmate.vim.git
 	ignore = untracked
-[submodule "bundle/railscasts-theme"]
-	path = bundle/railscasts-theme
-	url = https://github.com/jpo/vim-railscasts-theme.git
-	ignore = untracked
