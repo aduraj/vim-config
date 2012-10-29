@@ -46,7 +46,7 @@ nmap <silent> <F9> :EraseBadWhitespace<CR>
 nmap r "_d
 nmap rr "_dd
 
-nmap <C-v> "+gP
+nmap rv  "+gP
 nmap <C-a> ggVG
 
 vmap r "_d
