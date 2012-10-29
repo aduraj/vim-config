@@ -4,6 +4,9 @@ call pathogen#helptags()
 set nocompatible
 set whichwrap+=<,>,[,]
 
+set backupdir=~/.vim/backup/
+set directory=~/.vim/backup/
+
 set history=1000
 set undolevels=1000
 set number
@@ -46,7 +49,7 @@ nmap <silent> <F9> :EraseBadWhitespace<CR>
 nmap r "_d
 nmap rr "_dd
 
-nmap rv  "+gP
+nmap rv  "+gp
 nmap <C-a> ggVG
 
 vmap r "_d
