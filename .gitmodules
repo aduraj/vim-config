@@ -1,3 +1,6 @@
 [submodule "bundle/bad-whitespace"]
 	path = bundle/bad-whitespace
 	url = https://github.com/bitc/vim-bad-whitespace
+[submodule "bundle/minibufexpl"]
+	path = bundle/minibufexpl
+	url = https://github.com/fholgado/minibufexpl.vim.git
