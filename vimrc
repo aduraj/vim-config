@@ -23,6 +23,8 @@ match OverLength /\%121v.\+/
 
 filetype plugin on
 
+let NERDTreeIgnore = ['\.pyc$']
+
 let g:neocomplcache_enable_at_startup = 1
 inoremap <expr><C-d>  neocomplcache#close_popup() . "\<C-d>"
 inoremap <expr><Left>  neocomplcache#close_popup() . "\<Left>"
@@ -51,6 +53,10 @@ nmap rr "_dd
 
 nmap rv  "+gp
 nmap <C-a> ggVG
+
+nmap <silent> <A-Left> :bp<CR>
+nmap <silent> <A-Right> :bn<CR>
+nmap <silent> <A-d> :b#<bar>bd#<CR>
 
 vmap r "_d
 
