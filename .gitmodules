@@ -2,10 +2,6 @@
 	path = bundle/bad-whitespace
 	url = https://github.com/bitc/vim-bad-whitespace
 	ignore = untracked
-[submodule "bundle/minibufexpl"]
-	path = bundle/minibufexpl
-	url = https://github.com/fholgado/minibufexpl.vim.git
-	ignore = untracked
 [submodule "bundle/neocomplcache"]
 	path = bundle/neocomplcache
 	url = https://github.com/Shougo/neocomplcache.git
