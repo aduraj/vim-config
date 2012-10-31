@@ -18,9 +18,6 @@ else
     colorscheme desert
 endif
 
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%121v.\+/
-
 filetype plugin on
 
 let NERDTreeIgnore = ['\.pyc$']
@@ -61,7 +58,12 @@ nmap <silent> <A-d> :b#<bar>bd#<CR>
 vmap r "_d
 
 
+" Python
+let g:syntastic_python_checker_args="--max-line-length=120"
+
+
 " Autocommands
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
 
+au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>120v.\+', -1)
