@@ -62,11 +62,6 @@ vmap r "_d
 let g:syntastic_python_checker_args="--max-line-length=120"
 
 
-" Minibufexpl
-let g:miniBufExplorerMoreThanOne = 1
-let g:miniBufExplModSelTarget = 1
-
-
 " Autocommands
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
