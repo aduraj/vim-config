@@ -21,6 +21,9 @@ endif
 filetype plugin on
 
 let NERDTreeIgnore = ['\.pyc$']
+let g:ctrlp_prompt_mappings = {
+  \ 'AcceptSelection("t")': ['<c-t>'],
+  \ }
 
 let g:neocomplcache_enable_at_startup = 1
 inoremap <expr><C-d>  neocomplcache#close_popup() . "\<C-d>"
@@ -40,9 +43,8 @@ set shiftwidth=4
 set softtabstop=4
 set tabstop=4
 
-
 " Maps
-nmap <silent> <F12> :NERDTreeToggle<CR>
+nmap <silent> <F12> :NERDTreeTabsToggle<CR>
 nmap <silent> <F9> :EraseBadWhitespace<CR>
 
 nmap r "_d
@@ -51,23 +53,15 @@ nmap rr "_dd
 nmap rv  "+gp
 nmap <C-a> ggVG
 
-nmap <silent> <A-Left> :bp<CR>
-nmap <silent> <A-Right> :bn<CR>
+nmap <silent> <A-t> :tabnew<CR>
+nmap <silent> <A-Left> :tabprevious<CR>
+nmap <silent> <A-Right> :tabnext<CR>
+nmap <silent> <A-c> :tabclose<CR>
 
 vmap r "_d
-
 
 " Python
 let g:syntastic_python_checker_args="--max-line-length=120"
 
-
-" Minibufexpli
-let g:miniBufExplorerMoreThanOne = 1
-let g:miniBufExplModSelTarget = 1
-
-
 " Autocommands
-autocmd VimEnter * NERDTree
-autocmd VimEnter * wincmd p
-
 au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>120v.\+', -1)
