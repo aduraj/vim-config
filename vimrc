@@ -53,7 +53,6 @@ nmap <C-a> ggVG
 
 nmap <silent> <A-Left> :bp<CR>
 nmap <silent> <A-Right> :bn<CR>
-nmap <silent> <A-d> :b#<bar>bd#<CR>
 
 vmap r "_d
 
