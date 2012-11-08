@@ -14,6 +14,7 @@ set hidden
 
 if has("gui_running")
     colorscheme railscasts
+    set winaltkeys=no
 else
     colorscheme desert
 endif
