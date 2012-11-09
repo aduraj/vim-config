@@ -66,4 +66,8 @@ vmap r "_d
 let g:syntastic_python_checker_args="--max-line-length=120"
 
 " Autocommands
-au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>120v.\+', -1)
+if exists('+colorcolumn')
+    set colorcolumn=120
+else
+    au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>120v.\+', -1)
+endif
