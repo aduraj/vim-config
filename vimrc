@@ -96,3 +96,7 @@ let g:ctrlp_prompt_mappings = {
 
 " Python syntastic
 let g:syntastic_python_checker_args="--max-line-length=120"
+
+" Bad whitespace
+au BufWinEnter,WinEnter,FileType * HideBadWhitespace
+
