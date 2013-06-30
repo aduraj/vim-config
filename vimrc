@@ -45,8 +45,8 @@ endif
 nnoremap <silent> <F12> :NERDTreeTabsToggle<CR>
 inoremap <silent> <F12> <ESC>:NERDTreeTabsToggle<CR>
 
-nnoremap <silent> <F9> :EraseBadWhitespace<CR>
-inoremap <silent> <F9> <ESC>:EraseBadWhitespace<CR>a
+nnoremap <F9> :EraseBadWhitespace<CR>
+inoremap <F9> <ESC>:EraseBadWhitespace<CR>a
 
 vnoremap <C-d> "_d
 nnoremap <C-d> "_dd
@@ -78,6 +78,18 @@ inoremap <silent> <A-t> <ESC>:tabnew<CR>a
 inoremap <silent> <A-Left> <ESC>:tabprevious<CR>a
 inoremap <silent> <A-Right> <ESC>:tabnext<CR>a
 inoremap <silent> <A-c> <ESC>:bdel<CR>a
+
+" Remap home
+function ExtendedHome()
+    let column = col('.')
+    normal! ^
+    if column == col('.')
+        normal! 0
+    endif
+endfunction
+nnoremap <silent> <Home> :call ExtendedHome()<CR>
+vnoremap <silent> <Home> ^
+inoremap <silent> <Home> <C-O>:call ExtendedHome()<CR>
 
 " Neocomplcache
 let g:neocomplcache_enable_at_startup = 1
