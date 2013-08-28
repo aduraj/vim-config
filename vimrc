@@ -40,8 +40,9 @@ else
 endif
 
 " Maps
-nnoremap <silent> <Leader>n :NERDTreeTabsToggle<CR>
-nnoremap <silent> <Leader>b :EraseBadWhitespace<CR>
+nnoremap <silent> <Leader>nt :NERDTreeTabsToggle<CR>
+nnoremap <silent> <Leader>we :EraseBadWhitespace<CR>
+nnoremap <silent> <Leader>wt :ToggleBadWhitespace<CR>
 
 " Neocomplcache
 let g:neocomplcache_enable_at_startup = 1
