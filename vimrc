@@ -64,4 +64,5 @@ let g:ctrlp_regexp = 1
 
 " Filetypes
 au BufRead,BufNewFile *.hbs set filetype=html
+au BufRead,BufNewFile *.less set filetype=css
 
