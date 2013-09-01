@@ -30,3 +30,6 @@
 	path = bundle/nerdtree-tabs
 	url = https://github.com/jistr/vim-nerdtree-tabs.git
 	ignore = untracked
+[submodule "bundle/emmet"]
+	path = bundle/emmet
+	url = git@github.com:mattn/emmet-vim.git
