@@ -18,12 +18,10 @@ else
     colorscheme desert
 endif
 
-filetype plugin on
-filetype indent on
+filetype plugin indent on
 
 " Identation
 set autoindent
-set smartindent
 
 set expandtab
 set smarttab
