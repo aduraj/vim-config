@@ -2,6 +2,8 @@
 execute pathogen#infect()
 
 " General
+set hidden
+
 set nocompatible
 set whichwrap+=<,>,[,]
 set history=1000
