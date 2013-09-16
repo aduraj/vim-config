@@ -20,7 +20,7 @@ else
     colorscheme desert
 endif
 
-filetype plugin indent on
+filetype plugin on
 
 " Identation
 set autoindent
