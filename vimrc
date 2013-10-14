@@ -41,6 +41,41 @@ nnoremap <Leader>nt :NERDTreeTabsToggle<CR>
 nnoremap <Leader>we :EraseBadWhitespace<CR>
 nnoremap <Leader>wt :ToggleBadWhitespace<CR>
 
+" Visual block
+nnoremap <C-b> <C-v>
+
+nnoremap <C-a> ggVG
+inoremap <C-a> <Esc>ggVG
+vnoremap <C-a> <Esc> ggVG
+
+vnoremap <C-c> "+y
+
+vnoremap <C-x> "+d
+
+nnoremap <C-v> "+p
+vnoremap <C-v> "+p
+inoremap <C-v> <Esc>"+pa
+
+inoremap <C-s> <Esc>:w<CR>a
+nnoremap <C-s> :w<CR>
+
+inoremap <C-l> <Esc>"+yya
+nnoremap <C-l> "+yy
+
+inoremap <C-d> <Esc>"_ddi
+nnoremap <C-d> "_dd
+
+" Smart home
+function ExtendedHome()
+    let column = col('.')
+    normal! ^
+    if column == col('.')
+        normal! 0
+    endif
+endfunction
+nnoremap <silent> <Home> :call ExtendedHome()<CR>
+inoremap <silent> <Home> <C-O>:call ExtendedHome()<CR>
+
 " Neocomplcache
 let g:neocomplcache_enable_at_startup = 1
 
@@ -63,4 +98,3 @@ let g:ctrlp_regexp = 1
 " Filetypes
 au BufRead,BufNewFile *.hbs set filetype=html
 au BufRead,BufNewFile *.less set filetype=less
-
