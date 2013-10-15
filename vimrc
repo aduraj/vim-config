@@ -66,7 +66,7 @@ inoremap <C-d> <Esc>"_ddi
 nnoremap <C-d> "_dd
 
 " Smart home
-function ExtendedHome()
+function! ExtendedHome()
     let column = col('.')
     normal! ^
     if column == col('.')
