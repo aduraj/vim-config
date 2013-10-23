@@ -1,6 +1,7 @@
 vim-config
 ==========
 
-git clone...  
+git clone ...  
 git submodule init  
-git submodule update
+git submodule update  
+ln -s ~/.vim/vimrc ~/.vimrc
