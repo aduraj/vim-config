@@ -37,11 +37,6 @@ else
 endif
 
 " Maps
-nnoremap <Leader>nt :NERDTreeTabsToggle<CR>
-nnoremap <Leader>we :EraseBadWhitespace<CR>
-nnoremap <Leader>wt :ToggleBadWhitespace<CR>
-
-" Visual block
 nnoremap <C-b> <C-v>
 
 nnoremap <C-a> ggVG
@@ -83,6 +78,7 @@ let g:neocomplcache_enable_at_startup = 1
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
 let NERDTreeIgnore = ['\.pyc$']
+nnoremap <Leader>nt :NERDTreeTabsToggle<CR>
 
 " Python syntastic
 let g:syntastic_python_checker_args="--max-line-length=120"
@@ -90,6 +86,8 @@ let g:syntastic_python_flake8_args="--max-line-length=120"
 
 " Bad whitespace
 au BufWinEnter,WinEnter,FileType * HideBadWhitespace
+nnoremap <Leader>we :EraseBadWhitespace<CR>
+nnoremap <Leader>wt :ToggleBadWhitespace<CR>
 
 " CtrlP
 let g:ctrlp_working_path_mode = 0
@@ -98,3 +96,12 @@ let g:ctrlp_regexp = 1
 " Filetypes
 au BufRead,BufNewFile *.hbs set filetype=html
 au BufRead,BufNewFile *.less set filetype=less
+
+" MiniBufExpl
+let g:miniBufExplBuffersNeeded = 0
+let g:miniBufExplVSplit = 50
+let g:miniBufExplBRSplit = 1
+nnoremap <C-Down> :MBEbn<CR>
+nnoremap <C-Up> :MBEbp<CR>
+inoremap <C-Down> <ESC>:MBEbn<CR>
+inoremap <C-Up> <ESC>:MBEbp<CR>
