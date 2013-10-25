@@ -101,7 +101,7 @@ au BufRead,BufNewFile *.less set filetype=less
 let g:miniBufExplBuffersNeeded = 0
 let g:miniBufExplVSplit = 50
 let g:miniBufExplBRSplit = 1
-nnoremap <C-Down> :MBEbn<CR>
-nnoremap <C-Up> :MBEbp<CR>
-inoremap <C-Down> <ESC>:MBEbn<CR>
-inoremap <C-Up> <ESC>:MBEbp<CR>
+nnoremap <silent> <C-Down> :MBEbn<CR>
+nnoremap <silent> <C-Up> :MBEbp<CR>
+inoremap <silent> <C-Down> <ESC>:MBEbn<CR>
+inoremap <silent> <C-Up> <ESC>:MBEbp<CR>
