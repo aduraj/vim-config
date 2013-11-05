@@ -60,6 +60,9 @@ nnoremap <C-l> "+yy
 inoremap <C-d> <Esc>"_ddi
 nnoremap <C-d> "_dd
 
+inoremap <A-d> <ESC>:bd<CR>
+nnoremap <A-d> :bd<CR>
+
 " Smart home
 function! ExtendedHome()
     let column = col('.')
