@@ -68,6 +68,9 @@ nnoremap <silent> <A-Down> :wincmd j<CR>
 nnoremap <silent> <A-Left> :wincmd h<CR>
 nnoremap <silent> <A-Right> :wincmd l<CR>
 
+nnoremap <A-R> <C-w>R
+nnoremap <A-r> <C-w>r
+
 " Smart home
 function! ExtendedHome()
     let column = col('.')
