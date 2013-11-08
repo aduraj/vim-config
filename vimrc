@@ -60,8 +60,13 @@ nnoremap <C-l> "+yy
 inoremap <C-d> <Esc>"_ddi
 nnoremap <C-d> "_dd
 
-inoremap <A-d> <ESC>:bd<CR>
-nnoremap <A-d> :bd<CR>
+inoremap <silent> <A-d> <ESC>:bd<CR>
+nnoremap <silent> <A-d> :bd<CR>
+
+nnoremap <silent> <A-Up> :wincmd k<CR>
+nnoremap <silent> <A-Down> :wincmd j<CR>
+nnoremap <silent> <A-Left> :wincmd h<CR>
+nnoremap <silent> <A-Right> :wincmd l<CR>
 
 " Smart home
 function! ExtendedHome()
