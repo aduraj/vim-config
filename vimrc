@@ -111,7 +111,7 @@ au BufRead,BufNewFile *.less set filetype=less
 " MiniBufExpl
 autocmd VimEnter * MBEToggleMRU
 let g:miniBufExplBuffersNeeded = 0
-let g:miniBufExplVSplit = 50
+let g:miniBufExplVSplit = 35
 let g:miniBufExplBRSplit = 1
 nnoremap <silent> <C-Down> :MBEbb<CR>
 nnoremap <silent> <C-Up> :MBEbf<CR>
