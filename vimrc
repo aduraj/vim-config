@@ -31,7 +31,7 @@ set tabstop=4
 
 " Column line
 if exists('+colorcolumn')
-    set colorcolumn=120
+    set colorcolumn=121
 else
     au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>120v.\+', -1)
 endif
