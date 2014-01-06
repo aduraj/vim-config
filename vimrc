@@ -119,3 +119,14 @@ nnoremap <silent> <C-Down> :MBEbb<CR>
 nnoremap <silent> <C-Up> :MBEbf<CR>
 inoremap <silent> <C-Down> <ESC>:MBEbb<CR>
 inoremap <silent> <C-Up> <ESC>:MBEbf<CR>
+
+" hdevtools
+function! FindCabalSandboxRoot()
+    return finddir('.cabal-sandbox', './;')
+endfunction
+
+function! FindCabalSandboxRootPackageConf()
+    return glob(FindCabalSandboxRoot().'/*-packages.conf.d')
+endfunction
+
+let g:hdevtools_options = '-g-ilib -g-isrc -g-i. -g-idist/build/autogen -g-Wall -g-package-conf='.FindCabalSandboxRootPackageConf()
