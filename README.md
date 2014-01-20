@@ -1,7 +1,8 @@
 vim-config
 ==========
 
-git clone ...  
-git submodule init  
-git submodule update  
-ln -s ~/.vim/vimrc ~/.vimrc
+clone to ~/.vim  
+ln -s ~/.vim/vimrc ~/.vimrc  
+run install_vundle.sh  
+run :BundleInstall inside vim  
+restart vim  
