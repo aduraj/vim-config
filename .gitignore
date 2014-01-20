@@ -2,4 +2,4 @@
 !/backup/.gitkeep
 
 /bundle/*
-!/bundle/vundle
+!/bundle/.gitkeep

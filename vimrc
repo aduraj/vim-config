@@ -24,13 +24,13 @@ set whichwrap+=<,>,[,]
 set history=1000
 set undolevels=1000
 set number
-set lines=60
-set columns=220
 
 set backupdir=~/.vim/backup/
 set directory=~/.vim/backup/
 
 if has("gui_running")
+    set lines=60
+    set columns=220
     colorscheme railscasts
     set showtabline=2
 else
