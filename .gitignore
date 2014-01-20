@@ -1,2 +1,5 @@
-backup/*
-!backup/.gitkeep
+/backup/*
+!/backup/.gitkeep
+
+/bundle/*
+!/bundle/vundle

@@ -1,5 +1,19 @@
-" Pathogen
-execute pathogen#infect()
+" Vundle
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'bitc/vim-bad-whitespace'
+Bundle 'kien/ctrlp.vim'
+Bundle 'mattn/emmet-vim'
+Bundle 'fholgado/minibufexpl.vim'
+Bundle 'Shougo/neocomplcache'
+Bundle 'scrooloose/nerdtree'
+Bundle 'jistr/vim-nerdtree-tabs'
+Bundle 'jpo/vim-railscasts-theme'
+Bundle 'msanders/snipmate.vim'
+Bundle 'scrooloose/syntastic'
 
 " General
 set hidden
