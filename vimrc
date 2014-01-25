@@ -106,6 +106,7 @@ let g:neocomplcache_enable_at_startup = 1
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
 let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeDirArrows = 0
 nnoremap <Leader>nt :NERDTreeTabsToggle<CR>
 
 " Python syntastic
