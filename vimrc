@@ -13,8 +13,10 @@ Bundle 'Shougo/neocomplcache'
 Bundle 'scrooloose/nerdtree'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'jpo/vim-railscasts-theme'
+Bundle 'lsdr/monokai'
 Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/syntastic'
+Bundle 'slim-template/vim-slim.git'
 
 " General
 set hidden
@@ -31,7 +33,7 @@ set directory=~/.vim/backup/
 if has("gui_running")
     set lines=60
     set columns=220
-    colorscheme railscasts
+    colorscheme monokai
     set showtabline=2
 else
     colorscheme desert
@@ -136,15 +138,3 @@ nnoremap <silent> <C-Up> :MBEbf<CR>
 inoremap <silent> <C-Down> <ESC>:MBEbb<CR>
 inoremap <silent> <C-Up> <ESC>:MBEbf<CR>
 
-" hdevtools
-function! FindCabalSandboxRoot()
-    return finddir('.cabal-sandbox', './;')
-endfunction
-
-function! FindCabalSandboxRootPackageConf()
-    return glob(FindCabalSandboxRoot().'/*-packages.conf.d')
-endfunction
-
-if !empty( FindCabalSandboxRoot() )
-    let g:hdevtools_options = '-g-ilib -g-isrc -g-i. -g-idist/build/autogen -g-Wall -g-package-conf='.FindCabalSandboxRootPackageConf()
-endif
